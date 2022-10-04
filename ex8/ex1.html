@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 35px;
-        }
-    </style>
+   
 </head>
-<ul id="list"></ul>
 <body>
+<ul id="list"></ul>
+<button onclick="print()">click</button>
     <script>
-        let vieccanlam=["đi chơi ", "học bài","codeing","bla lba bla","hehehe "]
-        // in mảng
+        let vieccanlam=["đi chơi ","học bài","codeing","bla lba bla","hehehe "]
+        let colorlist=["red","yellow","blue","green","brown"]
+        //in mảng trên html
+        // let list=document.getElementById("list");
+        // let item1=document.createElement("li");
+        // item1.innerHTML=vieccanlam[0];
+        // list.appendChild(item1);
+        
+        /* // in mảng
         document.write(vieccanlam);
         console.log(vieccanlam);
         
@@ -43,11 +44,6 @@
         vieccanlam.splice(0,1);//xoá 1 phần tử từ vị trí không        
         console.log(vieccanlam);
         document.write(vieccanlam[0],"<br>");
-       //in mảng trên html
-       let list=document.getElementById("list");
-       let item1=document.createElement("li");
-       item1.innerHTML=vieccanlam[0];
-       list.appendChild(item1);
 
        
        let item2=document.createElement("li");
@@ -69,18 +65,33 @@
         console.log(i," lô tô")
        } */
        //in phần tử thứ i
-       for(let i=0;i<vieccanlam.length;i++){
-        document.write(vieccanlam[i],"<br>")
-        console.log(vieccanlam[i])
+    //    for(let i=0;i<vieccanlam.length;i++)
+    //    {
+    //     let item1=document.createElement("li");
+    //     item1.innerHTML=vieccanlam[i];
+    //     list.appendChild(item1);
+    //     } 
+    //    /* for(let i=0;i<vieccanlam.length;i++){
+    //     document.write(vieccanlam[i],"<br>")
+    //     console.log(vieccanlam[i])
+    //    } */
+    // for(let i=0;i<vieccanlam.length;i++){
+    //     document.write(vieccanlam[i])
+    // }
+       let print = function ()
+       {
+        for(let i=0;i<vieccanlam.length;i++)
+       {
+            let todo1tag=document.createElement("li")
+            todo1tag.innerHTML=vieccanlam[i];
+            todo1tag.style.color=colorlist[i];
+            list.appendChild(todo1tag)
+        }
        }
-       for(let i=0;i<vieccanlam.length;i++){
-        let item1=document.createElement("li");
-        item1.innerHTML=vieccanlam[i];
-        list.appendChild(item1);
-       }
-
-
-
+      
+        
+    
+    
 
     </script>
 </body>

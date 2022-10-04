@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        //bai 1 
+        document.write("bai 1<br>")
+        let traicay=[["táo",15],["chuối",14],["vải",12],["lẻmon",11],["dừa","nhiều"]]
+        document.write("i have ",traicay[0][1]," ",traicay[1][0],"<br>")
+        //bai 2
+        document.write("bai 2<br>")
+        for(let i=0;i<=traicay.length-1;i++){
+            document.write("i have ",traicay[i][1]," ","trái ",traicay[i][0],"<br>");
+            
+        }
+        //bai 3
+        var myDog = {
+        "name": "Ngao",
+        "legs": "4",
+        "friends": ["everything!"]
+        }
+
+        myDog.name = "Husky"
+
+        myDog.color = "Brown"
+
+        delete myDog.friends
+
+        console.log(myDog)
+
+        
+        
+        
+    </script>
+</body>
+</html>
