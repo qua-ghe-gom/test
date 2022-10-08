@@ -10,10 +10,85 @@
             color: white;
             background-color: black;
         }
+        table, th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table{
+        margin-left: auto; 
+        margin-right: auto;
+        }
     </style>
 </head>
 <body>
-    
+
+
+    <!-- bài 7 -->
+    <table>
+        <tr>
+            <th>thời gian</th>
+            <th>thứ 2</th>
+            <th>thứ 3</th>
+            <th>thứ 4</th>
+            <th>thứ 5</th>
+            <th>thứ 6</th>
+            <th>thứ 7</th>
+
+        </tr>
+        <tr>
+            <td>tiết 1</td>
+            <td>chào cờ</td>
+            <td>tiếng việt</td>
+            <td>tiếng việt</td>
+            <td>toán</td>
+            <td>âm nhạc</td>
+            <td rowspan="4">nghỉ</td>
+            
+        </tr>
+        <tr>
+            <td>tiết 2</td>
+            <td>tiếng việt </td>
+            <td>tiếng việt </td>
+            <td>tiếng việt </td>
+            <td>thể dục </td>
+            <td>tiếng việt </td>
+        </tr>
+        <tr >
+            <td colspan="6" style="text-align: center;">nghỉ trưa</td>
+        </tr>
+        <tr>
+            <td>tiết 3</td>
+            <td>tiếng việt</td>
+            <td>mỹ thuật</td>
+            <td>toán</td>
+            <td>tiếng việt</td>
+            <td>tiếng việt</td>
+        </tr>
+        <tr>
+            <td>tiết 4</td>
+            <td>toán</td>
+            <td>toán</td>
+            <td>toán</td>
+            <td>toán</td>
+            <td>toán</td>
+        </tr>
+        <tr>
+            <td>tiết 5</td>
+            <td>tiếng việt</td>
+            <td>tiếng việt</td>
+            <td> </td>
+            <td> </td>
+            <td>tiếng việt</td>
+        </tr>
+
+
+    </table>
+
+
+
+
+
     <script>
         //bai 1 
         document.write("bai 1<br>")
@@ -39,9 +114,37 @@
         delete myDog.friends
 
         console.log(myDog)
+// bài 4 
+const ok=10
+for (let i=1;i<=ok;i++){
+    for(var k=ok;k>i;k--){
+        document.write("&nbsp;&nbsp");
+    }
+    for(let j=1;j<=i*2-1;j++){
+        document.write("*");
 
-        
-        
+    }
+    document.write("<br> ")
+}
+// bài 5
+let myArr=[9,7,9,0,7,8,387,123,456]
+document.write("in mảng: ")
+for(let i=1;i<=myArr.length-1;i++){
+    document.write(myArr[i]," ")
+}
+document.write("<br>")
+document.write("số 0 có trong mảng: ")
+let socantim = myArr.filter(function(value) {
+    return value == 0; });
+document.write(socantim,"<br>");
+document.write("số chẵn có trong mảng: ")
+let sochan = myArr.filter(function(value) {
+    return value %2 ==0; });
+document.write(sochan);
+// bài 6 khó quá nên em xin bỏ qua ạ
+//bài 8 chưa hiểu cách làm
+
+
         
     </script>
 </body>
